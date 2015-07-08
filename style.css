@@ -1,0 +1,252 @@
+/*
+palette: http://www.colourlovers.com/palette/785305
+			100%		33%			66%
+dark green	#4b7c5c		#86a792		#aec4b6
+yellow		#b0a961		#cac595		#dbd8b8
+green		#7c9f69		#a7bf9a		#c4d4bb
+brown		#231109		#6b5f5a		#9c9490
+orange		#c67a3c		#d9a67c		#e6c3a7
+*/
+body {
+	background-color:#a7bf9a;
+	font-family: "Helvetica Neue",Helivetica,Arial,sans-serif;
+	font-size: 14px;
+	color:#231109;
+}
+.main {
+	width:828px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.main a {
+	color:#231109;
+}
+.main a:hover {
+	color:#B0A961;
+}
+.logo {
+	float:left;
+	left:30px;
+	position:relative;
+}
+h2 {
+	font-size:1.2em;
+	font-weight:normal;
+	left:35px;
+	position:relative;
+	top:20px;
+	width:800px;
+}
+.header-left {
+	float:left;
+	width:570px;
+	margin-bottom:-15px;
+}
+.header-left h1 {
+	display:none;
+}
+.header-right {
+	-moz-border-radius:5px 5px 5px 5px;
+	background-color:#C4D4BB;
+	float:left;
+	left:-10px;
+	position:relative;
+	top:70px;
+	width:258px;
+}
+.contact {
+	font-size:1.1em;
+}
+.contact .name {
+	font-size:0.9em;
+}
+.contact .email-address {
+	font-size:0.9em;
+}
+.contact img {
+	vertical-align:sub;
+}
+.contact .phone {
+	padding-left:20px;
+}
+.type {
+	clear:both;
+	margin:0 0 -4px 255px;
+	height:28px;
+	font-size:16px;
+}
+.type img {
+	border:0;
+}
+.type a {
+	position:relative;
+	top:3px;
+	text-decoration:none;
+	font-weight:bold;
+}
+.main a:hover {
+	color:#231109;
+	text-decoration:underline;
+}
+.btnDomestic {
+	background:url("images/domestic-button.png") no-repeat top left;
+	height:28px;
+	width:123px;
+	text-align:center;
+}
+.btnCommercial {
+	background:url("images/commercial-button.png") no-repeat top left;
+	height:28px;
+	width:137px;
+	text-align:center;
+	position:relative;
+	top:-28px;
+	left:135px;
+}
+
+#commercial {
+	display:none;
+}
+
+.photoframe {
+	clear:both;
+	background:url("images/photoframe.png") no-repeat top left;
+	height:428px;
+}
+.photoframe-commercial {
+	clear:both;
+	background:url("images/photoframe-yellow.png") no-repeat top left;
+	height:428px;
+}
+.photo {
+	position:relative;
+	top:14px;
+	width:800px;
+	height:400px;
+	margin:auto;
+	overflow:hidden;
+	background:url("images/loading.gif") no-repeat center center;
+}
+.photo-commercial {
+	position:relative;
+	top:14px;
+	width:800px;
+	height:400px;
+	margin:auto;
+	overflow:hidden;
+	background:url("images/loading-commercial.gif") no-repeat center center;
+}
+.photo img {
+	width:800px;
+	height:400px;
+	overflow:hidden;
+	position:absolute;
+}
+.photo-commercial img {
+	width:800px;
+	height:400px;
+	overflow:hidden;
+	position:absolute;
+}
+#thumbs-commercial {
+	height:50px;
+	margin-top:10px;
+	text-align:center;
+}
+.thumb {
+	height:50px;
+	width:67px;
+	overflow:hidden;
+	margin:2px;
+	border:2px #86a792 solid;
+	opacity:0.8;
+}
+.thumb:hover {
+	opacity:1;
+	border:2px #c67a3c solid;
+}
+.thumb-commercial {
+	height:50px;
+	width:67px;
+	overflow:hidden;
+	margin:2px;
+	border:2px #858585 solid;
+	opacity:0.8;
+}
+.thumb-commercial:hover {
+	opacity:1;
+	border:2px #c67a3c solid;
+}
+.thumb-active {
+	opacity:1;
+	border:2px #cac595 solid;
+}
+.thumb-highlight {
+	margin-bottom:20px;
+	border:2px #c67a3c solid;
+}
+
+
+.services {
+	padding-top:20px;
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:50px;
+}
+.services-header {
+	font-weight:bold;
+	font-size:1.2em;
+}
+.services-header .bullet {
+	width:16px;
+}
+.service-header td {
+	text-align:left;
+}
+.services-header td img {
+	padding-right:4px;
+}
+.services-header-link {
+	text-decoration:none;
+	border-bottom:1px dotted #231109;
+}
+.services-header a:hover {
+	/*border-bottom:1px dotted #c67a3c;*/
+	border-bottom:0;
+}
+.services-header-highlight {
+	border-bottom:2px solid #c67a3c;
+}
+.services-intro {
+	font-size:1.2em;
+	line-height:1.3em;
+}
+.services-intro td {
+	padding-bottom:20px;
+}
+.services-desc  td {
+	padding-left:25px;
+	vertical-align:top;
+}
+.services-thumbs td {
+	padding:0 0 10px 25px;
+}
+
+
+
+.footer {
+	text-align:center;
+	padding-bottom:20px;
+}
+.footer img {
+	vertical-align:top;
+}
+.footer .separator {
+	padding:0 10px 0 10px;
+}
+.copy {
+	font-size:0.8em;
+	text-align:center;
+	padding-bottom:20px;
+}
