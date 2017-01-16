@@ -64,6 +64,9 @@ ul.nav.navbar-nav.navbar-right {
 .main h1 {
   text-transform: uppercase;
 }
+.tab-content {
+  margin-bottom: 4rem;
+}
 .tab-pane {
   text-align: center;
   font-size: 3rem;
