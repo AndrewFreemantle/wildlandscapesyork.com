@@ -32,8 +32,11 @@ nav.navbar {
 nav.navbar ul.nav li {
   margin-left: 0.5rem;
 }
+a.navbar-brand.active {
+  padding: 8px 15px;
+}
 ul.nav.navbar-nav.navbar-right {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
