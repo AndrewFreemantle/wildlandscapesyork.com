@@ -69,6 +69,11 @@ ul.nav.navbar-nav.navbar-right {
   font-size: 3rem;
 }
 
+#home .col-md-6 {
+  font-size: 2rem;
+}
+
+
 .contact {
   font-size: 2rem;
 }
