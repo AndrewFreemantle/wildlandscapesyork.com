@@ -10,6 +10,35 @@ body {
   background: -ms-linear-gradient(top, #2d6529 0%,#2d6529 10%,#ffffff 100%);
   background: linear-gradient(to bottom, #2d6529 0%,#2d6529 10%,#ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d6529', endColorstr='#ffffff',GradientType=0 );
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.6rem;
 }
 
 a,
@@ -107,8 +136,6 @@ ul.nav.navbar-nav.navbar-right {
   margin-bottom: 4rem;
 }
 .tab-pane {
-  text-align: center;
-  font-size: 3rem;
 }
 
 #home .col-md-6 {
