@@ -140,6 +140,12 @@ ul.nav.navbar-nav.navbar-right {
   font-size: 1.8rem;
 }
 
+.inline-logo {
+  width: 294px;
+  margin: 3rem auto;
+  display: block;
+}
+
 #home .col-md-6 {
   font-size: 2rem;
 }
