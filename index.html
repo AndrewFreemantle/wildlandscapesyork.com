@@ -30,6 +30,15 @@
 </head>
 <body>
 
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -64,35 +73,34 @@
     </nav>
   </header>
 
-
-  <div id="photo-carousel">
-    <div class="item">
-      <img src="photos/home/1.jpg" alt="">
-      <h2 class="tab-page-title"></h2>
-      <h3></h3>
-    </div>
-    <div class="item">
-      <img src="photos/home/2.jpg" alt="">
-      <h2 class="tab-page-title"></h2>
-      <h3>Soft Landscaping</h3>
-    </div>
-    <div class="item">
-      <img src="photos/home/3.jpg" alt="">
-      <h2 class="tab-page-title"></h2>
-      <h3>Landscape Maintenance</h3>
-    </div>
-    <div class="item">
-      <img src="photos/home/4.jpg" alt="">
-      <h2 class="tab-page-title"></h2>
-      <h3>Projects both large or small</h3>
-    </div>
-  </div>
-
-
   <div class="container content main">
     <div class="row">
       <!-- content -->
       <div class="col-md-9 tab-content">
+
+        <div id="photo-carousel">
+          <div class="item">
+            <img src="photos/home/1.jpg" alt="">
+            <h2 class="tab-page-title"></h2>
+            <h3></h3>
+          </div>
+          <div class="item">
+            <img src="photos/home/2.jpg" alt="">
+            <h2 class="tab-page-title"></h2>
+            <h3>Soft Landscaping</h3>
+          </div>
+          <div class="item">
+            <img src="photos/home/3.jpg" alt="">
+            <h2 class="tab-page-title"></h2>
+            <h3>Landscape Maintenance</h3>
+          </div>
+          <div class="item">
+            <img src="photos/home/4.jpg" alt="">
+            <h2 class="tab-page-title"></h2>
+            <h3>Projects both large or small</h3>
+          </div>
+        </div>
+
         <div id="home" role="tabpanel" class="tab-pane fade in active">
           <img class="inline-logo" src="images/wild-landscapes-york-no-leaves-no-circle.png" alt="Wild Landscapes York logo">
 
@@ -202,7 +210,8 @@
 
         <div id="news" data-title="News" role="tabpanel" class="tab-pane fade">
 
-          <h3 class="bg-warning text-warning text-center">news content to follow..</h3>
+          <div class="fb-page" data-href="https://www.facebook.com/wildlandscapesyork" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/wildlandscapesyork" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/wildlandscapesyork">Wild Landscapes</a></blockquote></div>
+
         </div>
 
 
@@ -287,14 +296,14 @@
           $("#photo-carousel .item > h2.tab-page-title").css({ width: photoWidth + "px" });
           $("#photo-carousel .item > h3").css({ width: photoWidth + "px" });
           // show the first overlay..
-          $("#photo-carousel .item > h3").delay(paginationSpeed).animate( { top: "-=25", opacity: 1 }, 600);
+          $("#photo-carousel .item > h3").delay(paginationSpeed).animate( { top: "-=20", opacity: 1 }, 600);
         },
         beforeMove: function() {
           var photoHeight = $("#photo-carousel .item > img").first().outerHeight();
           $("#photo-carousel .item > h3").animate({ opacity: "0" }, 200, function() { $(this).css({ top: (photoHeight / 2 - 35) + "px" }); });
         },
         afterMove: function() {
-          $("#photo-carousel .item > h3").delay(paginationSpeed).animate( { top: "-=25", opacity: 1 }, 600);
+          $("#photo-carousel .item > h3").delay(paginationSpeed).animate( { top: "-=20", opacity: 1 }, 600);
         }
 
         // "singleItem:true" is a shortcut for:
@@ -316,6 +325,7 @@
         $("#photo-carousel .item > h2").animate({ opacity: "0" }, 200, function() {
           $(this).css({ top: "30px" });
           $("#photo-carousel").removeClass("tabpage-header");
+          $("#photo-carousel .item > h3").animate({ opacity: 1 }, 200);
         });
 
         // we have to set up our own interval to restart the photo carousel
@@ -334,10 +344,13 @@
         // apply the header class to shrink the header down
         $("#photo-carousel").addClass("tabpage-header");
 
+        // hide any messages as we're about to show the page title..
+        $("#photo-carousel .item > h3").animate({ opacity: 0 }, 200);
+
         // now grab the tab-page title and show it
         $(".tab-page-title").text($(href).attr('data-title'));
         $("#photo-carousel .item > h2.tab-page-title").css({ top: "35px", opacity: 0 });
-        $("#photo-carousel .item > h2.tab-page-title").delay(200).animate( { top: "-=15", opacity: 1 }, 300);
+        $("#photo-carousel .item > h2.tab-page-title").delay(200).animate({ top: "-=15", opacity: 1 }, 300);
       }
     });
 
